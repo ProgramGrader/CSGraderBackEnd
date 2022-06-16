@@ -1,0 +1,2104 @@
+{
+    "modelName": "CSEnterprise",
+    "collections": [
+        {
+            "collectionName": "Semester Dates",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Org Id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "childType": "timeuuid",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "code": "org_id",
+                    "required": true,
+                    "GUID": "7b364010-e093-11ec-be80-3b7593309a18",
+                    "foreignCollection": "4daf7d80-d596-11ec-8749-9d1cbe561875",
+                    "foreignField": [
+                        "4daf7d80-d596-11ec-8749-9d1cbe561875",
+                        "58e758d0-d596-11ec-8749-9d1cbe561875"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "54d0b730-eb23-11ec-9d7a-718fd53af3e2",
+                    "error": {}
+                },
+                {
+                    "name": "Year",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "childType": "date",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "GUID": "148620c0-eb23-11ec-9d7a-718fd53af3e2",
+                    "code": "year",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "GUID": "f1dc2090-ecaf-11ec-9d7a-718fd53af3e2",
+                    "name": "Spring",
+                    "type": "reference",
+                    "$ref": "#model/definitions/DateRange",
+                    "refType": "model",
+                    "ref": "bfcdbfb0-ec4a-11ec-9d7a-718fd53af3e2",
+                    "refIdPath": [
+                        "26aba180-d3e0-11ec-8749-9d1cbe561875",
+                        "26aba181-d3e0-11ec-8749-9d1cbe561875",
+                        "bfcdbfb0-ec4a-11ec-9d7a-718fd53af3e2"
+                    ],
+                    "isActivated": true,
+                    "code": "spring",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "GUID": "f6d4dce0-ecaf-11ec-9d7a-718fd53af3e2",
+                    "name": "Summer",
+                    "type": "reference",
+                    "$ref": "#model/definitions/DateRange",
+                    "refType": "model",
+                    "ref": "bfcdbfb0-ec4a-11ec-9d7a-718fd53af3e2",
+                    "refIdPath": [
+                        "26aba180-d3e0-11ec-8749-9d1cbe561875",
+                        "26aba181-d3e0-11ec-8749-9d1cbe561875",
+                        "bfcdbfb0-ec4a-11ec-9d7a-718fd53af3e2"
+                    ],
+                    "isActivated": true,
+                    "code": "summer",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "GUID": "01abac70-ecb0-11ec-9d7a-718fd53af3e2",
+                    "name": "Fall",
+                    "type": "reference",
+                    "$ref": "#model/definitions/DateRange",
+                    "refType": "model",
+                    "ref": "bfcdbfb0-ec4a-11ec-9d7a-718fd53af3e2",
+                    "refIdPath": [
+                        "26aba180-d3e0-11ec-8749-9d1cbe561875",
+                        "26aba181-d3e0-11ec-8749-9d1cbe561875",
+                        "bfcdbfb0-ec4a-11ec-9d7a-718fd53af3e2"
+                    ],
+                    "isActivated": true,
+                    "code": "fall",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "GUID": "07054d70-ecb0-11ec-9d7a-718fd53af3e2",
+                    "name": "Winter",
+                    "type": "reference",
+                    "$ref": "#model/definitions/DateRange",
+                    "refType": "model",
+                    "ref": "bfcdbfb0-ec4a-11ec-9d7a-718fd53af3e2",
+                    "refIdPath": [
+                        "26aba180-d3e0-11ec-8749-9d1cbe561875",
+                        "26aba181-d3e0-11ec-8749-9d1cbe561875",
+                        "bfcdbfb0-ec4a-11ec-9d7a-718fd53af3e2"
+                    ],
+                    "isActivated": true,
+                    "code": "winter",
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "49c88d90-e092-11ec-be80-3b7593309a18"
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "collectionUsers": [],
+            "tableIfNotExist": true,
+            "searchIndexIfNotExist": false,
+            "GUID": "49c495f0-e092-11ec-be80-3b7593309a18",
+            "bucketId": "99393140-d3e0-11ec-8749-9d1cbe561875",
+            "code": "semester",
+            "compositePartitionKey": [
+                {
+                    "keyId": "7b364010-e093-11ec-be80-3b7593309a18",
+                    "type": ""
+                },
+                {
+                    "keyId": "148620c0-eb23-11ec-9d7a-718fd53af3e2",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "collectionName": "Assignment Template",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Assignment Template Id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "GUID": "095b1f20-e08d-11ec-be80-3b7593309a18",
+                    "code": "id",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Class Template Id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "code": "ctemplate_id",
+                    "GUID": "27b95270-e08d-11ec-be80-3b7593309a18",
+                    "required": true,
+                    "foreignCollection": "6d201a70-e087-11ec-be80-3b7593309a18",
+                    "foreignField": [
+                        "6d201a70-e087-11ec-be80-3b7593309a18",
+                        "333cd230-e08c-11ec-be80-3b7593309a18"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "50d17e80-e08d-11ec-be80-3b7593309a18",
+                    "error": {}
+                },
+                {
+                    "name": "Name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "577ca5c0-e08d-11ec-be80-3b7593309a18",
+                    "error": {}
+                },
+                {
+                    "name": "Number",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "mode": "integer",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "GUID": "68b90810-e08d-11ec-be80-3b7593309a18",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Repository Url",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "d4907410-e08d-11ec-be80-3b7593309a18",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "code": "repository_url"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "14ae0e70-e08b-11ec-be80-3b7593309a18"
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "collectionUsers": [],
+            "tableIfNotExist": true,
+            "searchIndexIfNotExist": false,
+            "GUID": "14ab0130-e08b-11ec-be80-3b7593309a18",
+            "bucketId": "99393140-d3e0-11ec-8749-9d1cbe561875",
+            "code": "atemplate",
+            "compositePartitionKey": [
+                {
+                    "keyId": "095b1f20-e08d-11ec-be80-3b7593309a18",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "keyId": "27b95270-e08d-11ec-be80-3b7593309a18",
+                    "type": "ascending"
+                },
+                {
+                    "keyId": "68b90810-e08d-11ec-be80-3b7593309a18",
+                    "type": "ascending"
+                }
+            ]
+        },
+        {
+            "collectionName": "Course Template",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Long Course Template Id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "GUID": "333cd230-e08c-11ec-be80-3b7593309a18",
+                    "code": "id",
+                    "childRelationships": [
+                        "50d17e80-e08d-11ec-be80-3b7593309a18"
+                    ],
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Short Course Template Id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "98af5cd0-e08e-11ec-be80-3b7593309a18",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "code": "short_id"
+                },
+                {
+                    "name": "Name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "cb2d0dd0-e091-11ec-be80-3b7593309a18",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "code": "name"
+                },
+                {
+                    "name": "Description",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "d8390ce0-e091-11ec-be80-3b7593309a18",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "code": "description"
+                },
+                {
+                    "name": "Org Id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "childType": "timeuuid",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "code": "org_id",
+                    "required": true,
+                    "GUID": "f2926270-eb55-11ec-9d7a-718fd53af3e2",
+                    "foreignCollection": "4daf7d80-d596-11ec-8749-9d1cbe561875",
+                    "foreignField": [
+                        "4daf7d80-d596-11ec-8749-9d1cbe561875",
+                        "58e758d0-d596-11ec-8749-9d1cbe561875"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "1b7c5290-eb56-11ec-9d7a-718fd53af3e2",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "6d2375d0-e087-11ec-be80-3b7593309a18"
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "collectionUsers": [],
+            "tableIfNotExist": true,
+            "searchIndexIfNotExist": false,
+            "GUID": "6d201a70-e087-11ec-be80-3b7593309a18",
+            "bucketId": "99393140-d3e0-11ec-8749-9d1cbe561875",
+            "code": "ctemplate",
+            "hackoladeMeta": {},
+            "compositePartitionKey": [
+                {
+                    "keyId": "333cd230-e08c-11ec-be80-3b7593309a18",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "keyId": "f2926270-eb55-11ec-9d7a-718fd53af3e2",
+                    "type": "ascending"
+                }
+            ]
+        },
+        {
+            "collectionName": "Course",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Long Id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "GUID": "0a8d75b0-e06e-11ec-be80-3b7593309a18",
+                    "code": "long_id",
+                    "required": true,
+                    "static": false,
+                    "childRelationships": [
+                        "3d802ca0-e092-11ec-be80-3b7593309a18",
+                        "06cc9d40-eb1b-11ec-9d7a-718fd53af3e2",
+                        "29fe40d0-ebfb-11ec-9d7a-718fd53af3e2"
+                    ],
+                    "error": {}
+                },
+                {
+                    "name": "Short id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "3728ae00-e06e-11ec-be80-3b7593309a18",
+                    "maxLength": 10,
+                    "code": "short_id",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "name": "Name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "mode": "text",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "5adf49d0-e06e-11ec-be80-3b7593309a18",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "name": "Description",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "77c6bba0-e06e-11ec-be80-3b7593309a18",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "code": "description"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "86c30f70-e062-11ec-be80-3b7593309a18"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "tableIfNotExist": true,
+            "searchIndexIfNotExist": false,
+            "GUID": "86c0ec90-e062-11ec-be80-3b7593309a18",
+            "bucketId": "99393140-d3e0-11ec-8749-9d1cbe561875",
+            "compositePartitionKey": [
+                {
+                    "keyId": "0a8d75b0-e06e-11ec-be80-3b7593309a18",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": []
+        },
+        {
+            "collectionName": "Users",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "childType": "timeuuid",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "code": "id",
+                    "required": true,
+                    "GUID": "d43cb2c0-e061-11ec-be80-3b7593309a18",
+                    "childRelationships": [
+                        "5bcd92b0-e074-11ec-be80-3b7593309a18",
+                        "67d2be50-eb23-11ec-9d7a-718fd53af3e2",
+                        "817240f0-ebfb-11ec-9d7a-718fd53af3e2"
+                    ],
+                    "error": {}
+                },
+                {
+                    "name": "First_name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "mode": "text",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "9d249540-e062-11ec-be80-3b7593309a18",
+                    "code": "first_name",
+                    "required": true,
+                    "static": false,
+                    "error": {}
+                },
+                {
+                    "name": "Last Name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "mode": "text",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "a1ab8020-e066-11ec-be80-3b7593309a18",
+                    "code": "last_name",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Phone Number",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "978e3fc0-e06a-11ec-be80-3b7593309a18",
+                    "code": "phone_number",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "name": "Gender",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "code": "gender",
+                    "GUID": "7f4cc470-e06c-11ec-be80-3b7593309a18",
+                    "static": false,
+                    "error": {}
+                },
+                {
+                    "name": "Birth Year",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "code": "birth_year",
+                    "required": true,
+                    "GUID": "b77b8ca0-e06c-11ec-be80-3b7593309a18",
+                    "format": "date",
+                    "error": {}
+                },
+                {
+                    "name": "Email",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "032a6d20-e08f-11ec-be80-3b7593309a18",
+                    "format": "email",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "code": "email"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "c78a6c70-e061-11ec-be80-3b7593309a18"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "tableIfNotExist": true,
+            "searchIndexIfNotExist": false,
+            "GUID": "c7875f30-e061-11ec-be80-3b7593309a18",
+            "bucketId": "99393140-d3e0-11ec-8749-9d1cbe561875",
+            "compositePartitionKey": [
+                {
+                    "keyId": "d43cb2c0-e061-11ec-be80-3b7593309a18",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "collectionName": "Organizations",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Org Id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "childType": "timeuuid",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "code": "id",
+                    "required": true,
+                    "GUID": "58e758d0-d596-11ec-8749-9d1cbe561875",
+                    "childRelationships": [
+                        "41c8ce70-e074-11ec-be80-3b7593309a18",
+                        "1a955830-e085-11ec-be80-3b7593309a18",
+                        "54d0b730-eb23-11ec-9d7a-718fd53af3e2",
+                        "1b7c5290-eb56-11ec-9d7a-718fd53af3e2"
+                    ],
+                    "error": {}
+                },
+                {
+                    "name": "Name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "87bd7400-e06d-11ec-be80-3b7593309a18",
+                    "required": true,
+                    "static": true,
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "code": "name"
+                },
+                {
+                    "name": "Verified Organization",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "childType": "bool",
+                    "type": "boolean",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "9f011c70-e06d-11ec-be80-3b7593309a18",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "code": "verified"
+                },
+                {
+                    "name": "Parent Org",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "GUID": "0ba99ca0-e085-11ec-be80-3b7593309a18",
+                    "code": "parent_org",
+                    "foreignCollection": "4daf7d80-d596-11ec-8749-9d1cbe561875",
+                    "foreignField": [
+                        "4daf7d80-d596-11ec-8749-9d1cbe561875",
+                        "58e758d0-d596-11ec-8749-9d1cbe561875"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "1a955830-e085-11ec-be80-3b7593309a18",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "4db1a060-d596-11ec-8749-9d1cbe561875"
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "collectionUsers": [],
+            "tableIfNotExist": true,
+            "searchIndexIfNotExist": false,
+            "GUID": "4daf7d80-d596-11ec-8749-9d1cbe561875",
+            "bucketId": "99393140-d3e0-11ec-8749-9d1cbe561875",
+            "code": "org",
+            "compositePartitionKey": [
+                {
+                    "keyId": "58e758d0-d596-11ec-8749-9d1cbe561875",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "keyId": "0ba99ca0-e085-11ec-be80-3b7593309a18",
+                    "type": "ascending"
+                }
+            ]
+        },
+        {
+            "collectionName": "User Per Org",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Org id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "GUID": "04406540-e074-11ec-be80-3b7593309a18",
+                    "code": "org_id",
+                    "required": true,
+                    "foreignCollection": "4daf7d80-d596-11ec-8749-9d1cbe561875",
+                    "foreignField": [
+                        "4daf7d80-d596-11ec-8749-9d1cbe561875",
+                        "58e758d0-d596-11ec-8749-9d1cbe561875"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "41c8ce70-e074-11ec-be80-3b7593309a18",
+                    "error": {}
+                },
+                {
+                    "name": "User Id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "code": "user_id",
+                    "GUID": "49a7e1d0-e074-11ec-be80-3b7593309a18",
+                    "foreignCollection": "c7875f30-e061-11ec-be80-3b7593309a18",
+                    "foreignField": [
+                        "c7875f30-e061-11ec-be80-3b7593309a18",
+                        "d43cb2c0-e061-11ec-be80-3b7593309a18"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "5bcd92b0-e074-11ec-be80-3b7593309a18",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "role",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "integer",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "428fd3b0-e08f-11ec-be80-3b7593309a18",
+                    "description": "enum:\nstudent\nteacher\nta\nadmin",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "8d7d8d10-e06f-11ec-be80-3b7593309a18"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "tableIfNotExist": true,
+            "searchIndexIfNotExist": false,
+            "GUID": "8d7bb850-e06f-11ec-be80-3b7593309a18",
+            "bucketId": "99393140-d3e0-11ec-8749-9d1cbe561875",
+            "tableOptions": {
+                "GUID": "5fe36910-e074-11ec-be80-3b7593309a18"
+            },
+            "compositePartitionKey": [
+                {
+                    "keyId": "04406540-e074-11ec-be80-3b7593309a18",
+                    "type": ""
+                },
+                {
+                    "keyId": "49a7e1d0-e074-11ec-be80-3b7593309a18",
+                    "type": ""
+                }
+            ],
+            "code": "user_per_org"
+        },
+        {
+            "collectionName": "Assigned Assignments",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Course ID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "GUID": "baff66e0-eb1a-11ec-9d7a-718fd53af3e2",
+                    "code": "course_id",
+                    "foreignCollection": "86c0ec90-e062-11ec-be80-3b7593309a18",
+                    "foreignField": [
+                        "86c0ec90-e062-11ec-be80-3b7593309a18",
+                        "0a8d75b0-e06e-11ec-be80-3b7593309a18"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "06cc9d40-eb1b-11ec-9d7a-718fd53af3e2",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Assignment Id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "GUID": "7c4f7e90-eb23-11ec-9d7a-718fd53af3e2",
+                    "code": "assignment_id",
+                    "foreignCollection": "279843a0-e092-11ec-be80-3b7593309a18",
+                    "foreignField": [
+                        "279843a0-e092-11ec-be80-3b7593309a18",
+                        "279906f0-e092-11ec-be80-3b7593309a18"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "88ca3a20-eb23-11ec-9d7a-718fd53af3e2",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "User Id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "childType": "timeuuid",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "code": "user_id",
+                    "required": true,
+                    "GUID": "0c0a03b0-eb1b-11ec-9d7a-718fd53af3e2",
+                    "foreignCollection": "c7875f30-e061-11ec-be80-3b7593309a18",
+                    "foreignField": [
+                        "c7875f30-e061-11ec-be80-3b7593309a18",
+                        "d43cb2c0-e061-11ec-be80-3b7593309a18"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "67d2be50-eb23-11ec-9d7a-718fd53af3e2",
+                    "error": {}
+                },
+                {
+                    "name": "Repo Url",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "b5e220b0-eb1c-11ec-9d7a-718fd53af3e2",
+                    "format": "uri",
+                    "error": {}
+                },
+                {
+                    "name": "Extended",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "childType": "bool",
+                    "type": "boolean",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "1479b800-ecc0-11ec-9d7a-718fd53af3e2",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "code": "extended"
+                },
+                {
+                    "name": "Hard Close Time",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "1d203a10-ecc0-11ec-9d7a-718fd53af3e2",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "code": "hard_close_time",
+                    "foreignCollection": "",
+                    "foreignField": []
+                },
+                {
+                    "name": "Assigned Assignment Id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "GUID": "633f94f0-ecc0-11ec-9d7a-718fd53af3e2",
+                    "code": "aa_id",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "09c86ea0-e087-11ec-be80-3b7593309a18"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "tableIfNotExist": true,
+            "searchIndexIfNotExist": false,
+            "GUID": "09c64bc0-e087-11ec-be80-3b7593309a18",
+            "bucketId": "99393140-d3e0-11ec-8749-9d1cbe561875",
+            "code": "assigned_assignments",
+            "compositePartitionKey": [
+                {
+                    "keyId": "633f94f0-ecc0-11ec-9d7a-718fd53af3e2",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "keyId": "7c4f7e90-eb23-11ec-9d7a-718fd53af3e2",
+                    "type": "ascending"
+                },
+                {
+                    "keyId": "baff66e0-eb1a-11ec-9d7a-718fd53af3e2",
+                    "type": "ascending"
+                },
+                {
+                    "keyId": "0c0a03b0-eb1b-11ec-9d7a-718fd53af3e2",
+                    "type": "ascending"
+                }
+            ]
+        },
+        {
+            "collectionName": "Course Assignment",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Assignment Id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "GUID": "279906f0-e092-11ec-be80-3b7593309a18",
+                    "code": "id",
+                    "childRelationships": [
+                        "88ca3a20-eb23-11ec-9d7a-718fd53af3e2"
+                    ],
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Course Id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "childType": "uuid",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "code": "ctemplate_id",
+                    "GUID": "279906f1-e092-11ec-be80-3b7593309a18",
+                    "required": false,
+                    "foreignCollection": "86c0ec90-e062-11ec-be80-3b7593309a18",
+                    "foreignField": [
+                        "86c0ec90-e062-11ec-be80-3b7593309a18",
+                        "0a8d75b0-e06e-11ec-be80-3b7593309a18"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "3d802ca0-e092-11ec-be80-3b7593309a18",
+                    "error": {}
+                },
+                {
+                    "name": "Name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "279906f3-e092-11ec-be80-3b7593309a18",
+                    "error": {}
+                },
+                {
+                    "name": "Number",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "integer",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "279906f4-e092-11ec-be80-3b7593309a18",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "name": "Repository Url",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "279906f5-e092-11ec-be80-3b7593309a18",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "code": "repository_url"
+                },
+                {
+                    "name": "Order",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "mode": "smallint",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "GUID": "252265e0-ebfc-11ec-9d7a-718fd53af3e2",
+                    "code": "order",
+                    "description": "Number 0-N\nwith -1 being an unused assignment",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Open time",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "childType": "date",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "479e5ed0-ebfc-11ec-9d7a-718fd53af3e2",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "code": "open_time"
+                },
+                {
+                    "name": "Close time",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "code": "close_time",
+                    "GUID": "4d817b20-ebfc-11ec-9d7a-718fd53af3e2",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "name": "Publish Time",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "d0d360c0-ec2d-11ec-9d7a-718fd53af3e2",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "code": "publish_time"
+                },
+                {
+                    "name": "Published",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "childType": "bool",
+                    "type": "boolean",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "08a8d100-ecc0-11ec-9d7a-718fd53af3e2",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "code": "published"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "279906f6-e092-11ec-be80-3b7593309a18"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "tableIfNotExist": true,
+            "searchIndexIfNotExist": false,
+            "GUID": "279843a0-e092-11ec-be80-3b7593309a18",
+            "bucketId": "99393140-d3e0-11ec-8749-9d1cbe561875",
+            "code": "course_assignment",
+            "hackoladeMeta": {},
+            "tableOptions": {
+                "GUID": "4e5fba70-ec2e-11ec-9d7a-718fd53af3e2",
+                "caching": {
+                    "GUID": "4f7d3860-ec2e-11ec-9d7a-718fd53af3e2"
+                }
+            },
+            "compositePartitionKey": [
+                {
+                    "keyId": "279906f0-e092-11ec-be80-3b7593309a18",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "keyId": "252265e0-ebfc-11ec-9d7a-718fd53af3e2",
+                    "type": "ascending"
+                }
+            ]
+        },
+        {
+            "collectionName": "Course Role",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "User Id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "childType": "timeuuid",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "code": "e",
+                    "GUID": "2d4c8170-ebfb-11ec-9d7a-718fd53af3e2",
+                    "foreignCollection": "c7875f30-e061-11ec-be80-3b7593309a18",
+                    "foreignField": [
+                        "c7875f30-e061-11ec-be80-3b7593309a18",
+                        "d43cb2c0-e061-11ec-be80-3b7593309a18"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "817240f0-ebfb-11ec-9d7a-718fd53af3e2",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Course Id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "GUID": "21439a80-ebfb-11ec-9d7a-718fd53af3e2",
+                    "code": "course_id",
+                    "foreignCollection": "86c0ec90-e062-11ec-be80-3b7593309a18",
+                    "foreignField": [
+                        "86c0ec90-e062-11ec-be80-3b7593309a18",
+                        "0a8d75b0-e06e-11ec-be80-3b7593309a18"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "29fe40d0-ebfb-11ec-9d7a-718fd53af3e2",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Role",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "923331b0-ebfb-11ec-9d7a-718fd53af3e2",
+                    "error": {
+                        "enum": false,
+                        "enums": [
+                            false,
+                            false,
+                            false
+                        ],
+                        "exampleItems": [
+                            false,
+                            false,
+                            false
+                        ]
+                    },
+                    "enum": [
+                        "teacher",
+                        "student",
+                        "ta"
+                    ],
+                    "code": "role"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "c32b62e0-ebf8-11ec-9d7a-718fd53af3e2"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "tableIfNotExist": true,
+            "searchIndexIfNotExist": false,
+            "GUID": "c3274430-ebf8-11ec-9d7a-718fd53af3e2",
+            "bucketId": "99393140-d3e0-11ec-8749-9d1cbe561875",
+            "hackoladeMeta": {},
+            "code": "course_role",
+            "compositePartitionKey": [
+                {
+                    "keyId": "2d4c8170-ebfb-11ec-9d7a-718fd53af3e2",
+                    "type": ""
+                },
+                {
+                    "keyId": "21439a80-ebfb-11ec-9d7a-718fd53af3e2",
+                    "type": ""
+                }
+            ]
+        }
+    ],
+    "buckets": [
+        {
+            "name": "csgrader",
+            "type": "bucket",
+            "collectionIds": [
+                "4daf7d80-d596-11ec-8749-9d1cbe561875",
+                "c7875f30-e061-11ec-be80-3b7593309a18",
+                "86c0ec90-e062-11ec-be80-3b7593309a18",
+                "8d7bb850-e06f-11ec-be80-3b7593309a18",
+                "09c64bc0-e087-11ec-be80-3b7593309a18",
+                "6d201a70-e087-11ec-be80-3b7593309a18",
+                "14ab0130-e08b-11ec-be80-3b7593309a18",
+                "279843a0-e092-11ec-be80-3b7593309a18",
+                "49c495f0-e092-11ec-be80-3b7593309a18",
+                "c3274430-ebf8-11ec-9d7a-718fd53af3e2"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "indexes": [],
+            "replStrategy": "SimpleStrategy",
+            "addToCqlScript": true,
+            "keyspaceIfNotExist": true,
+            "GUID": "99393140-d3e0-11ec-8749-9d1cbe561875",
+            "replFactor": 3,
+            "durableWrites": true
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk Organizations. to User Per Org.",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "4daf7d80-d596-11ec-8749-9d1cbe561875",
+                    "58e758d0-d596-11ec-8749-9d1cbe561875"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "8d7bb850-e06f-11ec-be80-3b7593309a18",
+                    "04406540-e074-11ec-be80-3b7593309a18"
+                ]
+            ],
+            "childCardinality": "1",
+            "GUID": "41c8ce70-e074-11ec-be80-3b7593309a18",
+            "parentCollection": "4daf7d80-d596-11ec-8749-9d1cbe561875",
+            "childCollection": "8d7bb850-e06f-11ec-be80-3b7593309a18"
+        },
+        {
+            "name": "fk Users. to User Per Org.",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "c7875f30-e061-11ec-be80-3b7593309a18",
+                    "d43cb2c0-e061-11ec-be80-3b7593309a18"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "8d7bb850-e06f-11ec-be80-3b7593309a18",
+                    "49a7e1d0-e074-11ec-be80-3b7593309a18"
+                ]
+            ],
+            "childCardinality": "1",
+            "GUID": "5bcd92b0-e074-11ec-be80-3b7593309a18",
+            "parentCollection": "c7875f30-e061-11ec-be80-3b7593309a18",
+            "childCollection": "8d7bb850-e06f-11ec-be80-3b7593309a18"
+        },
+        {
+            "name": "fk Organizations. to Organizations.",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "4daf7d80-d596-11ec-8749-9d1cbe561875",
+                    "58e758d0-d596-11ec-8749-9d1cbe561875"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "4daf7d80-d596-11ec-8749-9d1cbe561875",
+                    "0ba99ca0-e085-11ec-be80-3b7593309a18"
+                ]
+            ],
+            "childCardinality": "1",
+            "GUID": "1a955830-e085-11ec-be80-3b7593309a18",
+            "parentCollection": "4daf7d80-d596-11ec-8749-9d1cbe561875",
+            "childCollection": "4daf7d80-d596-11ec-8749-9d1cbe561875"
+        },
+        {
+            "name": "fk Class Template. to Assignment Template.",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "6d201a70-e087-11ec-be80-3b7593309a18",
+                    "333cd230-e08c-11ec-be80-3b7593309a18"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "14ab0130-e08b-11ec-be80-3b7593309a18",
+                    "27b95270-e08d-11ec-be80-3b7593309a18"
+                ]
+            ],
+            "childCardinality": "1",
+            "GUID": "50d17e80-e08d-11ec-be80-3b7593309a18",
+            "parentCollection": "6d201a70-e087-11ec-be80-3b7593309a18",
+            "childCollection": "14ab0130-e08b-11ec-be80-3b7593309a18"
+        },
+        {
+            "name": "fk Course. to Course Assignment.",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "86c0ec90-e062-11ec-be80-3b7593309a18",
+                    "0a8d75b0-e06e-11ec-be80-3b7593309a18"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "279843a0-e092-11ec-be80-3b7593309a18",
+                    "279906f1-e092-11ec-be80-3b7593309a18"
+                ]
+            ],
+            "childCardinality": "1",
+            "GUID": "3d802ca0-e092-11ec-be80-3b7593309a18",
+            "parentCollection": "86c0ec90-e062-11ec-be80-3b7593309a18",
+            "childCollection": "279843a0-e092-11ec-be80-3b7593309a18"
+        },
+        {
+            "name": "fk Course. to Assigned Assignments.",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "86c0ec90-e062-11ec-be80-3b7593309a18",
+                    "0a8d75b0-e06e-11ec-be80-3b7593309a18"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "09c64bc0-e087-11ec-be80-3b7593309a18",
+                    "baff66e0-eb1a-11ec-9d7a-718fd53af3e2"
+                ]
+            ],
+            "childCardinality": "1",
+            "GUID": "06cc9d40-eb1b-11ec-9d7a-718fd53af3e2",
+            "parentCollection": "86c0ec90-e062-11ec-be80-3b7593309a18",
+            "childCollection": "09c64bc0-e087-11ec-be80-3b7593309a18"
+        },
+        {
+            "name": "fk Organizations. to Semester Dates.",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "4daf7d80-d596-11ec-8749-9d1cbe561875",
+                    "58e758d0-d596-11ec-8749-9d1cbe561875"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "49c495f0-e092-11ec-be80-3b7593309a18",
+                    "7b364010-e093-11ec-be80-3b7593309a18"
+                ]
+            ],
+            "childCardinality": "1",
+            "GUID": "54d0b730-eb23-11ec-9d7a-718fd53af3e2",
+            "parentCollection": "4daf7d80-d596-11ec-8749-9d1cbe561875",
+            "childCollection": "49c495f0-e092-11ec-be80-3b7593309a18"
+        },
+        {
+            "name": "fk Users. to Assigned Assignments.",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "c7875f30-e061-11ec-be80-3b7593309a18",
+                    "d43cb2c0-e061-11ec-be80-3b7593309a18"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "09c64bc0-e087-11ec-be80-3b7593309a18",
+                    "0c0a03b0-eb1b-11ec-9d7a-718fd53af3e2"
+                ]
+            ],
+            "childCardinality": "1",
+            "GUID": "67d2be50-eb23-11ec-9d7a-718fd53af3e2",
+            "parentCollection": "c7875f30-e061-11ec-be80-3b7593309a18",
+            "childCollection": "09c64bc0-e087-11ec-be80-3b7593309a18"
+        },
+        {
+            "name": "fk Course Assignment. to Assigned Assignments.",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "279843a0-e092-11ec-be80-3b7593309a18",
+                    "279906f0-e092-11ec-be80-3b7593309a18"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "09c64bc0-e087-11ec-be80-3b7593309a18",
+                    "7c4f7e90-eb23-11ec-9d7a-718fd53af3e2"
+                ]
+            ],
+            "childCardinality": "1",
+            "GUID": "88ca3a20-eb23-11ec-9d7a-718fd53af3e2",
+            "parentCollection": "279843a0-e092-11ec-be80-3b7593309a18",
+            "childCollection": "09c64bc0-e087-11ec-be80-3b7593309a18"
+        },
+        {
+            "name": "fk Organizations. to Course Template.",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "4daf7d80-d596-11ec-8749-9d1cbe561875",
+                    "58e758d0-d596-11ec-8749-9d1cbe561875"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "6d201a70-e087-11ec-be80-3b7593309a18",
+                    "f2926270-eb55-11ec-9d7a-718fd53af3e2"
+                ]
+            ],
+            "childCardinality": "1",
+            "GUID": "1b7c5290-eb56-11ec-9d7a-718fd53af3e2",
+            "parentCollection": "4daf7d80-d596-11ec-8749-9d1cbe561875",
+            "childCollection": "6d201a70-e087-11ec-be80-3b7593309a18"
+        },
+        {
+            "name": "fk Course. to Course Role.",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "86c0ec90-e062-11ec-be80-3b7593309a18",
+                    "0a8d75b0-e06e-11ec-be80-3b7593309a18"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "c3274430-ebf8-11ec-9d7a-718fd53af3e2",
+                    "21439a80-ebfb-11ec-9d7a-718fd53af3e2"
+                ]
+            ],
+            "childCardinality": "1",
+            "GUID": "29fe40d0-ebfb-11ec-9d7a-718fd53af3e2",
+            "parentCollection": "86c0ec90-e062-11ec-be80-3b7593309a18",
+            "childCollection": "c3274430-ebf8-11ec-9d7a-718fd53af3e2"
+        },
+        {
+            "name": "fk Users. to Course Role.",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "c7875f30-e061-11ec-be80-3b7593309a18",
+                    "d43cb2c0-e061-11ec-be80-3b7593309a18"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "c3274430-ebf8-11ec-9d7a-718fd53af3e2",
+                    "2d4c8170-ebfb-11ec-9d7a-718fd53af3e2"
+                ]
+            ],
+            "childCardinality": "1",
+            "GUID": "817240f0-ebfb-11ec-9d7a-718fd53af3e2",
+            "parentCollection": "c7875f30-e061-11ec-be80-3b7593309a18",
+            "childCollection": "c3274430-ebf8-11ec-9d7a-718fd53af3e2"
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "99393140-d3e0-11ec-8749-9d1cbe561875": "csgrader",
+        "4daf7d80-d596-11ec-8749-9d1cbe561875": "Organizations",
+        "58e758d0-d596-11ec-8749-9d1cbe561875": "Org Id",
+        "c7875f30-e061-11ec-be80-3b7593309a18": "Users",
+        "86c0ec90-e062-11ec-be80-3b7593309a18": "Course",
+        "9d249540-e062-11ec-be80-3b7593309a18": "First_name",
+        "d43cb2c0-e061-11ec-be80-3b7593309a18": "Id",
+        "978e3fc0-e06a-11ec-be80-3b7593309a18": "Phone Number",
+        "7f4cc470-e06c-11ec-be80-3b7593309a18": "Gender",
+        "b77b8ca0-e06c-11ec-be80-3b7593309a18": "Birth Year",
+        "a1ab8020-e066-11ec-be80-3b7593309a18": "Last Name",
+        "87bd7400-e06d-11ec-be80-3b7593309a18": "Name",
+        "9f011c70-e06d-11ec-be80-3b7593309a18": "Verified Organization",
+        "0a8d75b0-e06e-11ec-be80-3b7593309a18": "Long Id",
+        "3728ae00-e06e-11ec-be80-3b7593309a18": "Short id",
+        "5adf49d0-e06e-11ec-be80-3b7593309a18": "Name",
+        "77c6bba0-e06e-11ec-be80-3b7593309a18": "Description",
+        "8d7bb850-e06f-11ec-be80-3b7593309a18": "User Per Org",
+        "04406540-e074-11ec-be80-3b7593309a18": "Org id",
+        "41c8ce70-e074-11ec-be80-3b7593309a18": "fk Organizations. to User Per Org.",
+        "49a7e1d0-e074-11ec-be80-3b7593309a18": "User Id",
+        "5bcd92b0-e074-11ec-be80-3b7593309a18": "fk Users. to User Per Org.",
+        "0ba99ca0-e085-11ec-be80-3b7593309a18": "Parent Org",
+        "1a955830-e085-11ec-be80-3b7593309a18": "fk Organizations. to Organizations.",
+        "09c64bc0-e087-11ec-be80-3b7593309a18": "Assigned Assignments",
+        "6d201a70-e087-11ec-be80-3b7593309a18": "Course Template",
+        "14ab0130-e08b-11ec-be80-3b7593309a18": "Assignment Template",
+        "333cd230-e08c-11ec-be80-3b7593309a18": "Long Course Template Id",
+        "095b1f20-e08d-11ec-be80-3b7593309a18": "Assignment Template Id",
+        "27b95270-e08d-11ec-be80-3b7593309a18": "Class Template Id",
+        "50d17e80-e08d-11ec-be80-3b7593309a18": "fk Class Template. to Assignment Template.",
+        "577ca5c0-e08d-11ec-be80-3b7593309a18": "Name",
+        "68b90810-e08d-11ec-be80-3b7593309a18": "Number",
+        "d4907410-e08d-11ec-be80-3b7593309a18": "Repository Url",
+        "98af5cd0-e08e-11ec-be80-3b7593309a18": "Short Course Template Id",
+        "032a6d20-e08f-11ec-be80-3b7593309a18": "Email",
+        "428fd3b0-e08f-11ec-be80-3b7593309a18": "role",
+        "cb2d0dd0-e091-11ec-be80-3b7593309a18": "Name",
+        "d8390ce0-e091-11ec-be80-3b7593309a18": "Description",
+        "279843a0-e092-11ec-be80-3b7593309a18": "Course Assignment",
+        "279906f0-e092-11ec-be80-3b7593309a18": "Assignment Id",
+        "279906f1-e092-11ec-be80-3b7593309a18": "Course Id",
+        "279906f3-e092-11ec-be80-3b7593309a18": "Name",
+        "279906f4-e092-11ec-be80-3b7593309a18": "Number",
+        "279906f5-e092-11ec-be80-3b7593309a18": "Repository Url",
+        "3d802ca0-e092-11ec-be80-3b7593309a18": "fk Course. to Course Assignment.",
+        "49c495f0-e092-11ec-be80-3b7593309a18": "Semester Dates",
+        "baff66e0-eb1a-11ec-9d7a-718fd53af3e2": "Course ID",
+        "06cc9d40-eb1b-11ec-9d7a-718fd53af3e2": "fk Course. to Assigned Assignments.",
+        "0c0a03b0-eb1b-11ec-9d7a-718fd53af3e2": "User Id",
+        "b5e220b0-eb1c-11ec-9d7a-718fd53af3e2": "Repo Url",
+        "148620c0-eb23-11ec-9d7a-718fd53af3e2": "Year",
+        "7b364010-e093-11ec-be80-3b7593309a18": "Org Id",
+        "54d0b730-eb23-11ec-9d7a-718fd53af3e2": "fk Organizations. to Semester Dates.",
+        "67d2be50-eb23-11ec-9d7a-718fd53af3e2": "fk Users. to Assigned Assignments.",
+        "7c4f7e90-eb23-11ec-9d7a-718fd53af3e2": "Assignment Id",
+        "88ca3a20-eb23-11ec-9d7a-718fd53af3e2": "fk Course Assignment. to Assigned Assignments.",
+        "f2926270-eb55-11ec-9d7a-718fd53af3e2": "Org Id",
+        "1b7c5290-eb56-11ec-9d7a-718fd53af3e2": "fk Organizations. to Course Template.",
+        "c3274430-ebf8-11ec-9d7a-718fd53af3e2": "Course Role",
+        "21439a80-ebfb-11ec-9d7a-718fd53af3e2": "Course Id",
+        "29fe40d0-ebfb-11ec-9d7a-718fd53af3e2": "fk Course. to Course Role.",
+        "2d4c8170-ebfb-11ec-9d7a-718fd53af3e2": "User Id",
+        "817240f0-ebfb-11ec-9d7a-718fd53af3e2": "fk Users. to Course Role.",
+        "923331b0-ebfb-11ec-9d7a-718fd53af3e2": "Role",
+        "252265e0-ebfc-11ec-9d7a-718fd53af3e2": "Order",
+        "479e5ed0-ebfc-11ec-9d7a-718fd53af3e2": "Open time",
+        "4d817b20-ebfc-11ec-9d7a-718fd53af3e2": "Close time",
+        "d0d360c0-ec2d-11ec-9d7a-718fd53af3e2": "Publish Time",
+        "bfcdbfb0-ec4a-11ec-9d7a-718fd53af3e2": "DateRange",
+        "f1dc2090-ecaf-11ec-9d7a-718fd53af3e2": "Spring",
+        "f6d4dce0-ecaf-11ec-9d7a-718fd53af3e2": "Summer",
+        "01abac70-ecb0-11ec-9d7a-718fd53af3e2": "Fall",
+        "07054d70-ecb0-11ec-9d7a-718fd53af3e2": "Winter",
+        "08a8d100-ecc0-11ec-9d7a-718fd53af3e2": "Published",
+        "1479b800-ecc0-11ec-9d7a-718fd53af3e2": "Extended",
+        "1d203a10-ecc0-11ec-9d7a-718fd53af3e2": "Hard Close Time",
+        "633f94f0-ecc0-11ec-9d7a-718fd53af3e2": "Assigned Assignment Id"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [
+            {
+                "name": "DateRange",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "properties": [
+                    {
+                        "name": "Start Time",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "childType": "timestamp",
+                        "type": "string",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "GUID": "500044e0-ec4b-11ec-9d7a-718fd53af3e2",
+                        "error": {
+                            "name": false,
+                            "code": false
+                        },
+                        "code": "start_time"
+                    },
+                    {
+                        "name": "End Time",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "childType": "timestamp",
+                        "type": "string",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "GUID": "538796e0-ec4b-11ec-9d7a-718fd53af3e2",
+                        "error": {
+                            "name": false,
+                            "code": false
+                        },
+                        "code": "end_time"
+                    }
+                ],
+                "frozen": true,
+                "additionalProperties": false,
+                "childType": "udt",
+                "type": "document",
+                "compositeKey": [
+                    "compositePartitionKey",
+                    "compositeClusteringKey"
+                ],
+                "compositePartitionKey": false,
+                "compositeClusteringKey": false,
+                "GUID": "bfcdbfb0-ec4a-11ec-9d7a-718fd53af3e2",
+                "definitionRefs": [
+                    [
+                        "49c495f0-e092-11ec-be80-3b7593309a18",
+                        "f1dc2090-ecaf-11ec-9d7a-718fd53af3e2"
+                    ],
+                    [
+                        "49c495f0-e092-11ec-be80-3b7593309a18",
+                        "f6d4dce0-ecaf-11ec-9d7a-718fd53af3e2"
+                    ],
+                    [
+                        "49c495f0-e092-11ec-be80-3b7593309a18",
+                        "01abac70-ecb0-11ec-9d7a-718fd53af3e2"
+                    ],
+                    [
+                        "49c495f0-e092-11ec-be80-3b7593309a18",
+                        "07054d70-ecb0-11ec-9d7a-718fd53af3e2"
+                    ]
+                ],
+                "error": {
+                    "name": false,
+                    "code": false
+                },
+                "code": "daterange"
+            }
+        ],
+        "GUID": "26aba181-d3e0-11ec-8749-9d1cbe561875"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "26aba183-d3e0-11ec-8749-9d1cbe561875"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "26aba182-d3e0-11ec-8749-9d1cbe561875"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "3.x",
+    "dbVendor": "Cassandra",
+    "appTarget": "CASSANDRA",
+    "creationTS": "2022-05-14T23:47:01.655Z",
+    "GUID": "237361c0-ed7a-11ec-9d7a-718fd53af3e2",
+    "isLineageEnabled": false,
+    "lastModifTS": "2022-06-16T13:56:12.268Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Cassandra",
+        "pluginVersion": "0.1.108",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.1.3"
+    },
+    "hackoladeMeta": {},
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "4daf7d80-d596-11ec-8749-9d1cbe561875",
+                        "x": 890,
+                        "y": 132,
+                        "width": 348,
+                        "height": 105,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "c7875f30-e061-11ec-be80-3b7593309a18",
+                        "x": 542.1305234534334,
+                        "y": 433.46906866077495,
+                        "width": 306,
+                        "height": 159,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "86c0ec90-e062-11ec-be80-3b7593309a18",
+                        "x": 100.81781101291634,
+                        "y": 452.92182188987084,
+                        "width": 285,
+                        "height": 105,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "8d7bb850-e06f-11ec-be80-3b7593309a18",
+                        "x": 582,
+                        "y": 143,
+                        "width": 254,
+                        "height": 87,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "09c64bc0-e087-11ec-be80-3b7593309a18",
+                        "x": 471.7529558055402,
+                        "y": 632.3044226343592,
+                        "width": 345,
+                        "height": 159,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "6d201a70-e087-11ec-be80-3b7593309a18",
+                        "x": 931,
+                        "y": 442,
+                        "width": 372,
+                        "height": 123,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "14ab0130-e08b-11ec-be80-3b7593309a18",
+                        "x": 935,
+                        "y": 655,
+                        "width": 365,
+                        "height": 123,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "279843a0-e092-11ec-be80-3b7593309a18",
+                        "x": 80,
+                        "y": 619.75,
+                        "width": 302,
+                        "height": 213,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "49c495f0-e092-11ec-be80-3b7593309a18",
+                        "x": 1237,
+                        "y": 254,
+                        "width": 277,
+                        "height": 141,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "c3274430-ebf8-11ec-9d7a-718fd53af3e2",
+                        "x": 288.5188216039281,
+                        "y": 283.69558101472995,
+                        "width": 271,
+                        "height": 87,
+                        "color": {}
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 40,
+                        "y": 92,
+                        "GUID": "99393140-d3e0-11ec-8749-9d1cbe561875"
+                    }
+                ],
+                "collapsedNodes": [
+                    "49c495f0-e092-11ec-be80-3b7593309a1801abac70-ecb0-11ec-9d7a-718fd53af3e2",
+                    "49c495f0-e092-11ec-be80-3b7593309a1807054d70-ecb0-11ec-9d7a-718fd53af3e2",
+                    "49c495f0-e092-11ec-be80-3b7593309a18f6d4dce0-ecaf-11ec-9d7a-718fd53af3e2",
+                    "49c495f0-e092-11ec-be80-3b7593309a18f1dc2090-ecaf-11ec-9d7a-718fd53af3e2"
+                ],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

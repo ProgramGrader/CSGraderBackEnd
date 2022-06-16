@@ -26,6 +26,7 @@ dependencies {
     testImplementation("org.testcontainers:junit-jupiter")
     testImplementation("org.testcontainers:testcontainers")
     implementation("io.micronaut:micronaut-validation")
+    implementation("io.micronaut.liquibase:micronaut-liquibase")
 
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
 
