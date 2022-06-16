@@ -1486,6 +1486,74 @@
                     "type": ""
                 }
             ]
+        },
+        {
+            "collectionName": "Feature Flags",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Active",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "childType": "bool",
+                    "type": "boolean",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "d93de6f0-edbc-11ec-b105-49462d6be806",
+                    "required": true,
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "code": "active"
+                },
+                {
+                    "name": "Key",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "mode": "varchar",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "GUID": "c14e9530-edbc-11ec-b105-49462d6be806",
+                    "code": "key",
+                    "maxLength": 254,
+                    "minLength": 3,
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "b022d4b0-edbc-11ec-b105-49462d6be806"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "tableIfNotExist": false,
+            "searchIndexIfNotExist": false,
+            "GUID": "b01e19c0-edbc-11ec-b105-49462d6be806",
+            "bucketId": "99393140-d3e0-11ec-8749-9d1cbe561875",
+            "code": "feature_flags",
+            "compositePartitionKey": [
+                {
+                    "keyId": "c14e9530-edbc-11ec-b105-49462d6be806",
+                    "type": ""
+                }
+            ]
         }
     ],
     "buckets": [
@@ -1502,7 +1570,8 @@
                 "14ab0130-e08b-11ec-be80-3b7593309a18",
                 "279843a0-e092-11ec-be80-3b7593309a18",
                 "49c495f0-e092-11ec-be80-3b7593309a18",
-                "c3274430-ebf8-11ec-9d7a-718fd53af3e2"
+                "c3274430-ebf8-11ec-9d7a-718fd53af3e2",
+                "b01e19c0-edbc-11ec-b105-49462d6be806"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -1856,7 +1925,10 @@
         "08a8d100-ecc0-11ec-9d7a-718fd53af3e2": "Published",
         "1479b800-ecc0-11ec-9d7a-718fd53af3e2": "Extended",
         "1d203a10-ecc0-11ec-9d7a-718fd53af3e2": "Hard Close Time",
-        "633f94f0-ecc0-11ec-9d7a-718fd53af3e2": "Assigned Assignment Id"
+        "633f94f0-ecc0-11ec-9d7a-718fd53af3e2": "Assigned Assignment Id",
+        "b01e19c0-edbc-11ec-b105-49462d6be806": "Feature Flags",
+        "c14e9530-edbc-11ec-b105-49462d6be806": "Key",
+        "d93de6f0-edbc-11ec-b105-49462d6be806": "Active"
     },
     "definitions": {
         "type": "definitions",
@@ -1964,7 +2036,7 @@
     "creationTS": "2022-05-14T23:47:01.655Z",
     "GUID": "237361c0-ed7a-11ec-9d7a-718fd53af3e2",
     "isLineageEnabled": false,
-    "lastModifTS": "2022-06-16T13:56:12.268Z",
+    "lastModifTS": "2022-06-16T21:40:24.706Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2058,6 +2130,14 @@
                         "y": 283.69558101472995,
                         "width": 271,
                         "height": 87,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "b01e19c0-edbc-11ec-b105-49462d6be806",
+                        "x": 170.87888707037644,
+                        "y": 139.57283142389534,
+                        "width": 235,
+                        "height": 69,
                         "color": {}
                     }
                 ],
