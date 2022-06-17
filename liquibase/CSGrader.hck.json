@@ -1486,74 +1486,6 @@
                     "type": ""
                 }
             ]
-        },
-        {
-            "collectionName": "Feature Flags",
-            "type": "object",
-            "properties": [
-                {
-                    "name": "Active",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "primaryKey": false,
-                    "childType": "bool",
-                    "type": "boolean",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "GUID": "d93de6f0-edbc-11ec-b105-49462d6be806",
-                    "required": true,
-                    "error": {
-                        "name": false,
-                        "code": false
-                    },
-                    "code": "active"
-                },
-                {
-                    "name": "Key",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "primaryKey": true,
-                    "mode": "varchar",
-                    "subtype": "string",
-                    "childType": "char",
-                    "type": "string",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "compositePartitionKey": true,
-                    "compositeClusteringKey": false,
-                    "GUID": "c14e9530-edbc-11ec-b105-49462d6be806",
-                    "code": "key",
-                    "maxLength": 254,
-                    "minLength": 3,
-                    "required": true,
-                    "error": {}
-                }
-            ],
-            "definitions": {
-                "type": "definitions",
-                "properties": [],
-                "GUID": "b022d4b0-edbc-11ec-b105-49462d6be806"
-            },
-            "isActivated": true,
-            "additionalProperties": false,
-            "collectionUsers": [],
-            "tableIfNotExist": false,
-            "searchIndexIfNotExist": false,
-            "GUID": "b01e19c0-edbc-11ec-b105-49462d6be806",
-            "bucketId": "99393140-d3e0-11ec-8749-9d1cbe561875",
-            "code": "feature_flags",
-            "compositePartitionKey": [
-                {
-                    "keyId": "c14e9530-edbc-11ec-b105-49462d6be806",
-                    "type": ""
-                }
-            ]
         }
     ],
     "buckets": [
@@ -1570,8 +1502,7 @@
                 "14ab0130-e08b-11ec-be80-3b7593309a18",
                 "279843a0-e092-11ec-be80-3b7593309a18",
                 "49c495f0-e092-11ec-be80-3b7593309a18",
-                "c3274430-ebf8-11ec-9d7a-718fd53af3e2",
-                "b01e19c0-edbc-11ec-b105-49462d6be806"
+                "c3274430-ebf8-11ec-9d7a-718fd53af3e2"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -1925,10 +1856,7 @@
         "08a8d100-ecc0-11ec-9d7a-718fd53af3e2": "Published",
         "1479b800-ecc0-11ec-9d7a-718fd53af3e2": "Extended",
         "1d203a10-ecc0-11ec-9d7a-718fd53af3e2": "Hard Close Time",
-        "633f94f0-ecc0-11ec-9d7a-718fd53af3e2": "Assigned Assignment Id",
-        "b01e19c0-edbc-11ec-b105-49462d6be806": "Feature Flags",
-        "c14e9530-edbc-11ec-b105-49462d6be806": "Key",
-        "d93de6f0-edbc-11ec-b105-49462d6be806": "Active"
+        "633f94f0-ecc0-11ec-9d7a-718fd53af3e2": "Assigned Assignment Id"
     },
     "definitions": {
         "type": "definitions",
@@ -2036,7 +1964,7 @@
     "creationTS": "2022-05-14T23:47:01.655Z",
     "GUID": "237361c0-ed7a-11ec-9d7a-718fd53af3e2",
     "isLineageEnabled": false,
-    "lastModifTS": "2022-06-16T21:40:24.706Z",
+    "lastModifTS": "2022-06-17T00:31:06.882Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2055,7 +1983,7 @@
                     {
                         "GUID": "4daf7d80-d596-11ec-8749-9d1cbe561875",
                         "x": 890,
-                        "y": 132,
+                        "y": 117.65139116202948,
                         "width": 348,
                         "height": 105,
                         "color": {}
@@ -2063,7 +1991,7 @@
                     {
                         "GUID": "c7875f30-e061-11ec-be80-3b7593309a18",
                         "x": 542.1305234534334,
-                        "y": 433.46906866077495,
+                        "y": 419.12045982280443,
                         "width": 306,
                         "height": 159,
                         "color": {}
@@ -2071,7 +1999,7 @@
                     {
                         "GUID": "86c0ec90-e062-11ec-be80-3b7593309a18",
                         "x": 100.81781101291634,
-                        "y": 452.92182188987084,
+                        "y": 438.5732130519003,
                         "width": 285,
                         "height": 105,
                         "color": {}
@@ -2079,7 +2007,7 @@
                     {
                         "GUID": "8d7bb850-e06f-11ec-be80-3b7593309a18",
                         "x": 582,
-                        "y": 143,
+                        "y": 128.65139116202948,
                         "width": 254,
                         "height": 87,
                         "color": {}
@@ -2087,7 +2015,7 @@
                     {
                         "GUID": "09c64bc0-e087-11ec-be80-3b7593309a18",
                         "x": 471.7529558055402,
-                        "y": 632.3044226343592,
+                        "y": 617.9558137963886,
                         "width": 345,
                         "height": 159,
                         "color": {}
@@ -2095,7 +2023,7 @@
                     {
                         "GUID": "6d201a70-e087-11ec-be80-3b7593309a18",
                         "x": 931,
-                        "y": 442,
+                        "y": 427.6513911620295,
                         "width": 372,
                         "height": 123,
                         "color": {}
@@ -2103,7 +2031,7 @@
                     {
                         "GUID": "14ab0130-e08b-11ec-be80-3b7593309a18",
                         "x": 935,
-                        "y": 655,
+                        "y": 640.6513911620295,
                         "width": 365,
                         "height": 123,
                         "color": {}
@@ -2111,7 +2039,7 @@
                     {
                         "GUID": "279843a0-e092-11ec-be80-3b7593309a18",
                         "x": 80,
-                        "y": 619.75,
+                        "y": 605.4013911620295,
                         "width": 302,
                         "height": 213,
                         "color": {}
@@ -2119,7 +2047,7 @@
                     {
                         "GUID": "49c495f0-e092-11ec-be80-3b7593309a18",
                         "x": 1237,
-                        "y": 254,
+                        "y": 239.65139116202948,
                         "width": 277,
                         "height": 141,
                         "color": {}
@@ -2127,24 +2055,16 @@
                     {
                         "GUID": "c3274430-ebf8-11ec-9d7a-718fd53af3e2",
                         "x": 288.5188216039281,
-                        "y": 283.69558101472995,
+                        "y": 269.34697217675944,
                         "width": 271,
                         "height": 87,
-                        "color": {}
-                    },
-                    {
-                        "GUID": "b01e19c0-edbc-11ec-b105-49462d6be806",
-                        "x": 170.87888707037644,
-                        "y": 139.57283142389534,
-                        "width": 235,
-                        "height": 69,
                         "color": {}
                     }
                 ],
                 "buckets": [
                     {
                         "x": 40,
-                        "y": 92,
+                        "y": 77.65139116202948,
                         "GUID": "99393140-d3e0-11ec-8749-9d1cbe561875"
                     }
                 ],
