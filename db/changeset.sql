@@ -90,8 +90,8 @@ CREATE TABLE IF NOT EXISTS "csgrader"."course_assignment" (
     "close_time" timestamp,
     "publish_time" timestamp,
     "published" boolean,
-    PRIMARY KEY ("id", "order")
-) WITH CLUSTERING ORDER BY ("order" ASC);
+    PRIMARY KEY ("id", "order", "ctemplate_id")
+) WITH CLUSTERING ORDER BY ("order" ASC, "ctemplate_id" ASC);
 
 CREATE TABLE IF NOT EXISTS "csgrader"."course_role" (
     "e" timeuuid,

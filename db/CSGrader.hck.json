@@ -1152,7 +1152,7 @@
                     "name": "Course Id",
                     "hackoladeMeta": {},
                     "isActivated": true,
-                    "primaryKey": false,
+                    "primaryKey": true,
                     "childType": "uuid",
                     "type": "string",
                     "compositeKey": [
@@ -1160,10 +1160,10 @@
                         "compositeClusteringKey"
                     ],
                     "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
+                    "compositeClusteringKey": true,
                     "code": "ctemplate_id",
                     "GUID": "279906f1-e092-11ec-be80-3b7593309a18",
-                    "required": false,
+                    "required": true,
                     "foreignCollection": "86c0ec90-e062-11ec-be80-3b7593309a18",
                     "foreignField": [
                         "86c0ec90-e062-11ec-be80-3b7593309a18",
@@ -1367,6 +1367,10 @@
             "compositeClusteringKey": [
                 {
                     "keyId": "252265e0-ebfc-11ec-9d7a-718fd53af3e2",
+                    "type": "ascending"
+                },
+                {
+                    "keyId": "279906f1-e092-11ec-be80-3b7593309a18",
                     "type": "ascending"
                 }
             ]
@@ -1964,7 +1968,7 @@
     "creationTS": "2022-05-14T23:47:01.655Z",
     "GUID": "237361c0-ed7a-11ec-9d7a-718fd53af3e2",
     "isLineageEnabled": false,
-    "lastModifTS": "2022-06-17T00:31:06.882Z",
+    "lastModifTS": "2022-06-20T03:42:18.970Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1973,7 +1977,7 @@
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "6.1.3"
+        "version": "6.2.0"
     },
     "hackoladeMeta": {},
     "settings": {
@@ -2040,7 +2044,7 @@
                         "GUID": "279843a0-e092-11ec-be80-3b7593309a18",
                         "x": 80,
                         "y": 605.4013911620295,
-                        "width": 302,
+                        "width": 311,
                         "height": 213,
                         "color": {}
                     },
